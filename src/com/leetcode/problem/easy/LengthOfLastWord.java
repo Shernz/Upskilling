@@ -33,10 +33,11 @@ package com.leetcode.problem.easy;
 public class LengthOfLastWord {
 
     public static void main(String[] args) {
-        String[] s = {"Hello World", "    ", "awesome"};
+        String[] s = {"Hello World", "    ", "awesome", "   fly me   to   the moon  "};
         assert lengthOfLastWord(s[0]) == 5;
         assert lengthOfLastWord(s[1]) == 0;
         assert lengthOfLastWord(s[2]) == 7;
+        assert lengthOfLastWord(s[3]) == 4;
     }
 
     public static int lengthOfLastWord(String s) {
