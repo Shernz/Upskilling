@@ -44,7 +44,7 @@ public class CountPrefixes {
 
         int matches = 0;
         for(String word : words) {
-            if (word.length() < 11 && s.startsWith(word) && s.contains(word)) {
+            if (word.length() < 11 && s.startsWith(word)) {
                 matches++;
             }
         }
