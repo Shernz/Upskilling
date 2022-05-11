@@ -22,9 +22,4 @@ public class ReverseAString {
         }
         return reversedString.toString();
     }
-
-    public static void main(String[] args) {
-        assert reverseString("timbuktu12") == "21utkubmit";
-        assert reverseString("njnschnjkdasn j32 uida") == "adiu 23j nsadkjnhcsnjn";
-    }
 }
