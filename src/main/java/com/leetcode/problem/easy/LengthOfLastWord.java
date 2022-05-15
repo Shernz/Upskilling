@@ -34,6 +34,6 @@ public class LengthOfLastWord {
 
     public static int lengthOfLastWord(String s) {
         String[] words = s.split("\s+");
-        return words[words.length - 1].length();
+        return words.length > 0 ? words[words.length - 1].length() : 0;
     }
 }
