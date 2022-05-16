@@ -36,17 +36,6 @@ import java.util.List;
 
 public class MinimumNetStockPriceChange {
 
-    public static void main(String[] args) {
-        // write your code here
-        List<Integer> minimumNetStockPrice = Arrays.asList(1, 3, 2, 4, 5, 6);
-
-       int earliestMonth = MinimumNetStockPriceChange.findEarliestMonth(minimumNetStockPrice);
-
-       System.out.println("Earliest month - " + earliestMonth);
-
-    }
-
-
     public static int findEarliestMonth(List<Integer> stockPrice) {
         List<Integer> sum = new ArrayList<>();
         sum.add(stockPrice.get(0));
