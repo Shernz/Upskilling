@@ -31,17 +31,6 @@ import java.util.List;
 
 public class PascalTriangleDecryption {
 
-    public static void main(String[] args) {
-        // write your code here
-        List<Integer> pascalTriangleData = Arrays.asList(4, 5, 6, 7);
-
-        String message = PascalTriangleDecryption.getEncryptedNumber(pascalTriangleData);
-
-        System.out.println("Message - " + message);
-
-
-    }
-
     public static String getEncryptedNumber(List<Integer> numbers) {
         // Write your code here
 
