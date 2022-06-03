@@ -2,6 +2,7 @@ package com.algodaily.technicalInterviewPrep;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.Arrays;
 
 /**
  * Here's the definition of an anagram: a word, phrase, or name formed by rearranging the letters of another: such as cinema, formed from iceman.
@@ -22,14 +23,10 @@ public class IsAnAnagram {
         // with solution
         inputA = inputA.toLowerCase();
         inputB = inputB.toLowerCase();
-        Set<Character> inputSetA = new HashSet<>();
-        for(char input : inputA.toCharArray()){
-            inputSetA.add(input);
-        }
-        boolean doesItContain = true;
-        for (char input : inputB.toCharArray()) {
-            doesItContain = doesItContain && inputSetA.contains(input);
-        }
-        return doesItContain;
+        Set<String> inputSetA = new HashSet<>();
+        Arrays.stream(inputA.split("")).forEach(element -> inputSetA.add(element));
+        final boolean[] doesItContain = {true};
+        Arrays.stream(inputB.split("")).forEach(element -> doesItContain[0] = doesItContain[0] && inputSetA.contains(element));
+        return doesItContain[0];
     }
 }
